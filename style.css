@@ -193,3 +193,36 @@ img, .container, .row, .col, .carousel, .carousel-inner {
   margin-right: 0;
   padding-right: 0;
 }
+
+/* ====== AMENITIES ====== */
+.amenity-carousel img{
+  height: 380px;              /* alto consistente */
+  object-fit: cover;
+  display: block;
+}
+
+.amenity-card{
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 18px 16px 20px;
+}
+
+.icon-pill.icon-green{
+  width: 48px; height: 48px;
+  border-radius: 999px;
+  display:flex; align-items:center; justify-content:center;
+  margin: -28px auto 10px auto;
+  background: linear-gradient(135deg, #22c55e, #86efac); /* verde brillante */
+  color:#052e16;
+  box-shadow: 0 8px 24px rgba(34,197,94,.35);
+}
+.icon-pill.icon-green i{ font-size: 1.3rem; }
+
+#amenities h5{ color:#e9f4ff; }
+#amenities p{ color: rgba(255,255,255,.8); }
+
+/* Responsive */
+@media (max-width: 991px){
+  .amenity-carousel img{ height: 300px; }
+}
