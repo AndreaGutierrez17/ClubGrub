@@ -163,3 +163,33 @@ body{
   #process .process-wrapper{flex-direction:column;}
   #process .process-text{margin-top:30px;}
 }
+
+/* === FIX SCROLL HORIZONTAL === */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Controlar padding negativo de Bootstrap rows */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Imágenes y contenedores no deben salirse */
+img, .container, .row, .col, .carousel, .carousel-inner {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Ajuste hero para evitar overflow */
+.hero .hero-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navbar-toggler {
+  margin-right: 0;
+  padding-right: 0;
+}
